@@ -1,0 +1,46 @@
+body{
+    font-family: 'Poppins', sans-serif;
+
+}
+/* common parts  */
+header{
+    display: flex;
+    justify-content: center;
+    height: 675px;
+}
+/* header part starts  */
+.header-part{
+    background-color: black;
+    display: flex;
+    padding: 60px;
+    border-radius: 30px;
+}
+.header-info h1{
+    font-size: 70px;
+    line-height: 80px;
+    color: white;
+}
+.header-info p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: white;
+}   
+
+.header-img img{
+    width: 581px;
+    height: 613px;
+    margin-left: 70px;   
+}
+.header-btn{
+    background-color: #DD0000;
+    padding: 12px 32px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: 1s ease;
+}
+.header-btn:hover{
+    background-color: white;
+    color: black;
+}
