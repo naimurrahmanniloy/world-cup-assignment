@@ -1,5 +1,7 @@
 body{
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    margin: 0;
 
 }
 /* common parts  */
@@ -7,6 +9,12 @@ header{
     display: flex;
     justify-content: center;
     height: 675px;
+    margin: 10px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
 }
 /* header part starts  */
 .header-part{
@@ -43,4 +51,133 @@ header{
 .header-btn:hover{
     background-color: white;
     color: black;
+}
+
+/* main section starts */
+.aside_menu{
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+    background-color: black;
+    width: 280px;
+    padding: 10px;
+    height: 260px;
+    border-radius: 15px;  
+    
+}
+.main-sec{
+    display: flex;
+}
+.aside_btn{
+    width: 230px;
+    height: 64px;
+    border: none;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    margin-left: 30px;
+    cursor: pointer;
+    font-size: 20px;    
+    transition: 1.5s ease;
+    margin-top: 15px;
+    background-color: white;
+    text-align: center; 
+    text-decoration: none;   
+}
+.article{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 24px;
+    row-gap: 20px;
+}
+.blog{
+    width: 290px;
+    height: 362px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 10px;
+    border-radius: 10px;
+   
+}
+.blog img{
+    width: 290px;
+}
+.aside_btn:hover{
+    background-color: #DD0000;
+    border-radius: 10px;
+    color: white;
+}
+.trans_btn{
+    width: 100px;
+    height: 32px;
+}
+.blog-duration{
+    display: flex;
+    justify-content: space-around;
+}
+.clock{
+    color: gray;   
+}
+.comment{
+    color: gray;
+}
+
+/* upcoming match section starts  */
+.flag-img{
+    width: 93px;
+    height: 54px;
+}
+
+/* footer section starts  */
+footer{
+    width: 1600px;
+    height: 444px;
+    background: #161616;
+    margin-top: 130px;
+}
+.footer-info{
+    display: grid;
+    align-items: center;
+
+}
+.footer_line{
+    width: 1320px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 20px;
+}
+.footer-info h2{
+    color: white;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    
+}
+.footer-menu{
+    margin-top: 60px;
+    text-align: center;
+}
+.footer-menu a{
+    text-decoration: none;
+    color: gray;
+    margin-left: 10px;
+}
+.social-icon{
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+.social-logo{
+    margin-left: 70px;
+    font-size: 30px;
+    transition: 1s ease;
+    padding: 5px;
+    color: white;
+    
+}
+.social-logo:visited{
+    color: white;
+}
+.social-logo:hover{
+    color: blue;
+    background-color: gray;
+    border-radius: 10px;
 }
