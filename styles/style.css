@@ -1,6 +1,6 @@
 body{
     font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
+    overflow-x:hidden;
     margin: 0;
 
 }
@@ -25,7 +25,6 @@ main{
 }
 .header-info h1{
     font-size: 70px;
-    line-height: 80px;
     color: white;
 }
 .header-info p{
@@ -93,8 +92,7 @@ main{
     height: 362px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     padding: 10px;
-    border-radius: 10px;
-   
+    border-radius: 10px;   
 }
 .blog img{
     width: 290px;
@@ -118,11 +116,40 @@ main{
 .comment{
     color: gray;
 }
+.view_btn{
+    display: flex;
+    justify-content: center;
+    margin-top:30px ;
+   display: none;
+}
 
 /* upcoming match section starts  */
-.flag-img{
-    width: 93px;
-    height: 54px;
+.flag_sec{
+    width: 300px;
+    height: 242px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.flag_img{
+    display: flex;
+    justify-content: space-around; 
+    margin-top: 60px;
+}
+.flag_img span{
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 16px;
+}
+.flag_text{
+    margin-left: 50px;
+    margin-top: 25px;
+}
+.flag_text p{
+    font-weight: 400;
+    font-size: 16px;
+    color: #4D4D4D;
+    margin-left: 20px;
 }
 
 /* footer section starts  */
@@ -180,4 +207,68 @@ footer{
     color: blue;
     background-color: gray;
     border-radius: 10px;
+}
+
+/* media quary for mobile devices  */
+@media screen and (max-width:668px) {
+    /* header section  */
+    body{
+        overflow-x: hidden;
+    }
+    header{
+        height: 100%;
+    }
+    .header-part{
+        flex-direction: column;
+    }
+    .header-img img{
+        width: 263px;
+        height: 295px;
+        margin-top: 30px;
+    }
+   
+    .header-info h1{
+        font-weight: 700;
+        font-size: 22px;
+        text-align: center;
+    }
+    .header-info p{
+        font-weight: 400;
+        font-size: 14px;
+        text-align: center;
+    }
+    .header-btn{
+        margin-left: 90px;
+        margin-top: 30px;
+    }
+
+    /* main section starts  */
+    .main-sec{
+        display: grid;
+    }
+    .aside_menu{
+        
+        background-color: white;
+    }
+    
+    .article{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    /* footer section starts  */
+    footer{
+        width:600px;
+    }
+    .footer-info h2{    
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;    
+    }
+    .footer_line{
+        width: 330px;
+    }
+    .footer-menu{
+        display: flex;
+        flex-direction: column;
+    }
 }
